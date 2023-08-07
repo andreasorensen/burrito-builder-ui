@@ -19,7 +19,7 @@ describe('Burrito Builder App', () => {
 
     cy.get('p').contains('Order: Nothing selected');
 
-    cy.get('button').contains('Submit Order');
+    cy.get('button').contains('Submit Order').should('be.disabled');
 
     cy.get('.order').should('have.length', 3);
     cy.get('.order').first().contains('Pat');
