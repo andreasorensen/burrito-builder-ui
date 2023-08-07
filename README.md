@@ -15,25 +15,29 @@ Be sure to setup the [backend repo for Burrito Builder](https://github.com/turin
 
 ### Iteration 1
 
-Right now the app won't load because its unfinished/buggy. Run the dev server and fix whatever bugs/finish whatever functionality is causing the app to crash. 
+[X] Right now the app won't load because its unfinished/buggy. Run the dev server and fix whatever bugs/finish whatever functionality is causing the app to crash. 
 
 ### Iteration 2
 
-Connect the front end to the backend so that when the app loads, all existing orders are fetched from the server.
+[X] Connect the front end to the backend so that when the app loads, all existing orders are fetched from the server.
 
 ### Iteration 3
 
-Add functionality to enable form submission only when at least one ingredient and a name have been added to the order. If either of these two requirements is missing, the form should not be submittable. Upon successful submission, a POST request should be made to the server.
+[X] Add functionality to enable form submission only when at least one ingredient and a name have been added to the order. 
+[X] If either of these two requirements is missing, the form should not be submittable. 
+[X] Upon successful submission, a POST request should be made to the server.
 
-New orders should only be displayed on the page IF the POST request is successful. The user should see the new order displayed without the page refreshing. The new order should persist on the DOM after refreshing as well.
+[X] New orders should only be displayed on the page IF the POST request is successful. 
+[X] The user should see the new order displayed without the page refreshing. 
+[X] The new order should persist on the DOM after refreshing as well.
 
 ### Iteration 4
 
 Cypress testing: Be sure to stub all network requests:  
 
-- Write a test covering what should be displayed when the user first visits the page.
-- Write a test to check the user flow of adding a new order to the DOM.
-- Write a test to check that orders cannot be submitted without a name and at least one ingredient.
+[X] - Write a test covering what should be displayed when the user first visits the page.
+[] - Write a test to check the user flow of adding a new order to the DOM.
+[] - Write a test to check that orders cannot be submitted without a name and at least one ingredient.
 
 
 ## Extensions (only to be attempted if all prior iterations are complete)
