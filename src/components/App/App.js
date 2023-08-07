@@ -13,15 +13,19 @@ function App() {
       .catch((err) => console.error("Error fetching:", err));
   }, []);
 
-  return (
-    <main className="App">
-      <header>
-        <h1>Burrito Builder</h1>
-        <OrderForm />
-      </header>
-      <Orders orders={orders} />
-    </main>
-  );
+  const handleNewOrder = (newOrder) => {
+    setOrders((prevOrders) => [...prevOrders, newOrder]);
+  };
+
+    return (
+      <main className="App">
+        <header>
+          <h1>Burrito Builder</h1>
+          <OrderForm onNewOrder={handleNewOrder} />
+        </header>
+        <Orders orders={orders} />
+      </main>
+    );
 }
 
 export default App;
