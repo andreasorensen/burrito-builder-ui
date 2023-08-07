@@ -4,7 +4,6 @@ describe("Add New Order Flow", () => {
       cy.intercept("GET", "http://localhost:3001/api/v1/orders", orders).as(
         "getOrders"
       );
-      // cy.visit('http://localhost:3000');
     });
 
     cy.intercept({
@@ -23,10 +22,6 @@ describe("Add New Order Flow", () => {
   });
 
   it("should allow user to add a new order", () => {
-    // cy.intercept("POST", "http://localhost:3001/api/v1/orders", (req) => {
-    //   req.body.id = Date.now();
-    //   return req;
-    // }).as("postOrder");
 
     cy.get('input[placeholder="Name"]').type("John");
 
