@@ -44,7 +44,7 @@ Cypress testing: Be sure to stub all network requests:
 
 - Add delete functionality for an order (the server-side endpoint exists already) so that when the order is ready it can be removed from the ticketing system.
 - Test the deleting functionality.
-- Right now, an order can contain duplicates of ingredients. Bring some logic into the form so that an order can contain only two of the same ingredient.
+[X] - Right now, an order can contain duplicates of ingredients. Bring some logic into the form so that an order can contain only two of the same ingredient.
 - Add a total cost for the order. Add prices to each ingredient and total each order based on the ingredient cost. Display this for each order. The backend should be able to handle any extra data beyond `name` and `ingredients`.
 - Style the form - it's hideous, and the team is sad about it.
 - Style the container so that orders are nice and tidy, especially when ingredient amounts vary between orders.

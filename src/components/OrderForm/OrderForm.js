@@ -41,7 +41,7 @@ function OrderForm({ onNewOrder }) {
     setIngredients([]);
   }
 
-/// Extension to allow ingredients to only be added twice. I know that alert boxes aren't super user friendly, I just wanted to finish on-time- irl, I'd display the message to the user by rendering a <p> tag conditionally.
+/// Extension to allow ingredients to only be added twice. I know that alert boxes aren't user friendly, I just wanted to finish on-time. IRL, I'd display the message to the user by rendering a <p> tag conditionally.
 
   function addIngredient(ingredient) {
     const ingredientCount = ingredients.filter(item => item === ingredient).length;
