@@ -6,6 +6,7 @@ function OrderForm(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    // send to API
     clearInputs();
   }
 
@@ -13,6 +14,12 @@ function OrderForm(props) {
     setName("");
     setIngredients([]);
   };
+
+  function addIngredient(ingredient) {
+    if (!ingredients.includes(ingredient)) {
+      setIngredients([...ingredients, ingredient]);
+    }
+  }
 
   const possibleIngredients = [
     "beans",
@@ -33,7 +40,7 @@ function OrderForm(props) {
       <button
         key={ingredient}
         name={ingredient}
-        // onClick={(e) => }
+        onClick={() => addIngredient(ingredient)}
       >
         {ingredient}
       </button>
@@ -47,7 +54,7 @@ function OrderForm(props) {
         placeholder="Name"
         name="name"
         value={name}
-        // onChange={(e) => }
+        onChange={(e) => setName(e.target.value)}
       />
 
       {ingredientButtons}
