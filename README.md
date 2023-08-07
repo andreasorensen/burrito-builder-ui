@@ -36,8 +36,8 @@ Be sure to setup the [backend repo for Burrito Builder](https://github.com/turin
 Cypress testing: Be sure to stub all network requests:  
 
 [X] - Write a test covering what should be displayed when the user first visits the page.
-[] - Write a test to check the user flow of adding a new order to the DOM.
-[] - Write a test to check that orders cannot be submitted without a name and at least one ingredient.
+[X] - Write a test to check the user flow of adding a new order to the DOM.
+[X] - Write a test to check that orders cannot be submitted without a name and at least one ingredient.
 
 
 ## Extensions (only to be attempted if all prior iterations are complete)
